@@ -202,6 +202,15 @@ void DetailedGameListView::updateInfoPanel()
 			mPlayers.setValue(file->metadata.get("players"));
 			mLastPlayed.setValue(file->metadata.get("lastplayed"));
 			mPlayCount.setValue(file->metadata.get("playcount"));
+		}else{
+			mRating.setValue("");
+			mReleaseDate.setValue("");
+			mDeveloper.setValue("");
+			mPublisher.setValue("");
+			mGenre.setValue("");
+			mPlayers.setValue("");
+			mLastPlayed.setValue("");
+			mPlayCount.setValue("");
 		}
 		
 		fadingOut = false;
