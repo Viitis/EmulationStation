@@ -68,6 +68,7 @@ bool ISimpleGameListView::input(InputConfig* config, Input input)
 				{
 					mCursorStack.push(cursor);
 					populateList(cursor->getChildren());
+					setCursor(cursor->getChildren().front());
 				}
 			}
 				
